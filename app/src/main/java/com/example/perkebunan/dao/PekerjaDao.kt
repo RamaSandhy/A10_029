@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.Flow
 interface PekerjaDao {
     @Query("SELECT * FROM pekerja")
     fun getAllPekerja(): Flow<List<Pekerja>>
-    
+
     @Query("SELECT * FROM pekerja WHERE id_pekerja = :id")
     suspend fun getPekerjaById(id: Int): Pekerja?
 
