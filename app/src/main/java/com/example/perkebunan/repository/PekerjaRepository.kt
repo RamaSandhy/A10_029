@@ -4,8 +4,8 @@ import com.example.perkebunan.model.pekerja
 
 abstract class PekerjaRepository {
     abstract fun getAllPekerja(): List<pekerja.Pekerja>
-    fun getPekerjaById(id: Int): pekerja.Pekerja?
-    fun addPekerja(pekerja: pekerja.Pekerja)
-    fun updatePekerja(pekerja: pekerja.Pekerja)
-    fun deletePekerja(id: Int)
+    abstract fun getPekerjaById(id: Int): pekerja.Pekerja?
+    abstract fun addPekerja(pekerja: pekerja.Pekerja)
+    abstract fun updatePekerja(pekerja: pekerja.Pekerja)
+    abstract fun deletePekerja(id: Int)
 }
