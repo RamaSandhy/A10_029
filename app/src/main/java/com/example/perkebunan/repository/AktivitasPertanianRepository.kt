@@ -1,5 +1,9 @@
 package com.example.perkebunan.repository
 
-class AktivitasPertanianRepository {
-
+abstract class AktivitasPertanianRepository {
+    abstract fun getAllAktivitas(): List<Aktivitas>
+    fun getAktivitasById(id: Int): Aktivitas?
+    fun addAktivitas(aktivitas: Aktivitas)
+    fun updateAktivitas(aktivitas: Aktivitas)
+    fun deleteAktivitas(id: Int)
 }
