@@ -1,9 +1,9 @@
 package com.example.perkebunan.repository
 
-class CatatanRepository {
-    fun getAllCatatanPanen(): List<CatatanPanen>
-    fun getCatatanPanenById(id: Int): CatatanPanen?
-    fun addCatatanPanen(catatanPanen: CatatanPanen)
-    fun updateCatatanPanen(catatanPanen: CatatanPanen)
-    fun deleteCatatanPanen(id: Int)
+abstract class CatatanRepository {
+    abstract fun getAllCatatanPanen(): List<CatatanPanen>
+    abstract fun getCatatanPanenById(id: Int): CatatanPanen?
+    abstract fun addCatatanPanen(catatanPanen: CatatanPanen)
+    abstract fun updateCatatanPanen(catatanPanen: CatatanPanen)
+    abstract fun deleteCatatanPanen(id: Int)
 }
